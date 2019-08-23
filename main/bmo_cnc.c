@@ -16,7 +16,6 @@ static int otamode = 0;
 static void bmo_cnc_task(void *pvParameters);
 
 static void process_packet(int sock, Packet *p);
-static esp_err_t event_handler(void *ctx, system_event_t *event);
 
 void bmo_cnc_init() {
     esp_log_level_set(TAG, ESP_LOG_DEBUG);
